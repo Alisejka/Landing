@@ -1,0 +1,443 @@
+body {
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    background-color:#E5E5E5;
+}
+
+.top-part {
+    background: url(../img/rectangle.jpg) no-repeat center / cover;
+    /* width: 1440px; */
+    height: 726px;
+    color:white;
+}
+
+    .up {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+        .left {
+            /* padding: 10px; */
+            font-size: 18px;
+        }
+        .right {
+            display: flex;
+            /* padding: 10px; */
+        }
+
+        .right a {
+            padding-right: 10px;
+        }
+
+        .right img {
+            width: 18px;
+            height: 23px;
+        }
+
+        .nav {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin: 5px;
+            font-family: Roboto;
+            font-size: 12px;
+        }
+
+        .download1 img{
+        margin-right: 7px;
+        }
+
+    .header {
+        margin-top: 200px;
+    }
+
+    .header p{
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .common{
+        max-width: 1128px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;av
+        margin-right: auto;
+    }
+
+    h1{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 53.2px;
+        line-height: 62px;
+        max-width: 300px;
+    }
+    .headerclass {
+        max-width: 500px;
+    }
+
+/* БЕЛЫЙ ОСНОВНОЙ БЛОК */
+
+.main {
+    max-width: 1380px;
+    margin: 0 auto;
+    background-color: white;
+    color: #999999;
+    margin-bottom: 30px;
+    
+}
+
+.products {
+    margin-top: -30px;
+    
+    text-align: center;
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+h3 {
+    margin: 0 auto;
+    padding: 95px 0px 38px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36.4px;
+    line-height: 43px;
+    color: #3C4858;
+/* 
+    border: 1px solid brown; */
+}
+
+.products div {
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 21px;
+    text-align: center;
+    width: 723px;
+    margin-bottom: 50px;
+}
+
+.prodinfo {
+    width: 100%;
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #999999;
+
+    /* border: 1px solid brown; */
+}
+
+.features {
+    background-color: white;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 150px;
+}
+
+    .feat {
+        min-width: 200px;
+        max-width: 328px;
+        /* border: 1px dashed grey; */
+        text-align: center;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+        .feat-name {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #3C4858;   
+        }
+        
+        .feat-img {
+            width: 70px;
+            height: 70px;
+        }
+
+.team {
+    background-color: white;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 50px;
+    /* border: 1px dashed indigo; */
+    text-align: center;
+    min-width: 230px;
+}
+
+    .t-member{
+        max-width: 350px;
+        text-align: center;
+        margin: 30px;
+        /* border: 1px dashed pink; */
+
+    }
+
+    .member-descr {
+        width: 100%;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    img .avatar {
+        max-width: 170px;
+        max-height: 170px;
+        background-color: black;
+        box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        color: #999999;
+    }
+
+    .member-name {
+        font-weight: 500;
+        font-size: 18.2px;
+        line-height: 21px;
+        color: #3C4858;
+        margin-top: -10px;
+    }
+
+    .profession {
+        font-weight: 500;
+        font-size: 13.65px;
+        line-height: 16px;
+        color: #777777;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        font-size: 18px;
+        line-height: 21px;
+        color: gray;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+.form {
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+    .form p {
+        width: 605px;
+    }
+
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    input, 
+    textarea {
+        width: 300px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid grey;
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        padding: 5px;
+    }
+
+    input::placeholder {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    input:focus::-webkit-input-placeholder { 
+        color:transparent;
+    }
+
+    textarea::placeholder {
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    .form-message textarea {
+        width: 605px;
+        min-height: 100px;
+        resize: none;
+    }
+
+    .form-button button {
+        background-color: #9C27B0;
+        border: none;
+        color: white;
+        min-width: 30px;
+        padding: 5px 15px;
+        margin-top: 25px;
+        margin-bottom: 80px;
+        /* border-radius: 5%; */
+    }
+
+/* ФУТЕР */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.footer-left a {
+    color: black;
+    text-decoration: none;
+    margin-right: 33px;
+}
+
+.footer-right {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+    
+    body {
+       width: 100%; 
+    }
+    .top-part, .footer {
+      width:100%;
+    }
+
+    .up {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .common {
+        display: none;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .products div {
+        width: 100%;
+    }
+
+    .products h3 {
+        /* font-size: 17.5px;
+        line-height: 21px;
+        text-align: center; */
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .feat {
+        /* margin: auto; */
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .team-members {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .t-member {
+        max-width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .form-names {
+        display: flex;
+        flex-direction: column;
+    }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .footer-left {
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+    .footer-right {
+
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    /* For mobile phones: */
+    .top-part, .main, .footer {
+        width:100%;
+      }
+
+}
