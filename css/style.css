@@ -1,12 +1,12 @@
 body {
-    margin:0px;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     background-color:#E5E5E5;
 }
 
 .top-part {
     background: url(../img/rectangle.jpg) no-repeat center / cover;
-    /* width: 1440px; */
+    background-repeat: no-repeat;
     height: 726px;
     color:white;
 }
@@ -16,14 +16,16 @@ body {
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        max-width: 1380px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
         .left {
-            /* padding: 10px; */
             font-size: 18px;
         }
         .right {
             display: flex;
-            /* padding: 10px; */
         }
 
         .right a {
@@ -51,20 +53,17 @@ body {
 
     .header {
         margin-top: 200px;
-    }
-
-    .header p{
-        padding-bottom: 30px;
-        font-size: 18px;
-    }
-
-    .common{
         max-width: 1128px;
         padding-left: 30px;
         padding-right: 30px;
-        margin-left: auto;av
+        margin-left: auto;
         margin-right: auto;
     }
+    
+    .header p{
+        padding-bottom: 30px;
+        font-size: 18px;
+    }   
 
     h1{
         font-style: normal;
@@ -99,8 +98,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    /* border: 1px solid red; */
 }
 
 h3 {
@@ -113,8 +110,6 @@ h3 {
     font-size: 36.4px;
     line-height: 43px;
     color: #3C4858;
-/* 
-    border: 1px solid brown; */
 }
 
 .products div {
@@ -132,15 +127,12 @@ h3 {
     font-size: 17.5px;
     line-height: 21px;
     text-align: center;
-
     color: #999999;
 
-    /* border: 1px solid brown; */
 }
 
 .features {
     background-color: white;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-around;
     font-weight: 300;
@@ -152,7 +144,6 @@ h3 {
     .feat {
         min-width: 200px;
         max-width: 328px;
-        /* border: 1px dashed grey; */
         text-align: center;
         margin-bottom: 3%;
         margin-top: 3%;
@@ -182,9 +173,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     margin-bottom: 50px;
-    /* border: 1px dashed indigo; */
     text-align: center;
     min-width: 230px;
 }
@@ -193,8 +182,6 @@ h3 {
         max-width: 350px;
         text-align: center;
         margin: 30px;
-        /* border: 1px dashed pink; */
-
     }
 
     .member-descr {
@@ -246,7 +233,6 @@ h3 {
     }
 
 .form {
-    /* border: 1px solid saddlebrown; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,7 +274,12 @@ h3 {
     }
 
     input:focus::-webkit-input-placeholder { 
-        color:transparent;
+        color: transparent;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: violet;
     }
 
     textarea::placeholder {
@@ -318,6 +309,13 @@ h3 {
 
 /* ФУТЕР */
 
+.footer-container {
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -346,15 +344,29 @@ h3 {
     text-align: center;
 }
 
+/* 
+TABLET TABLET TABLET TABLET TABLET 
+TABLET TABLET TABLET TABLET TABLET 
+TABLET TABLET TABLET TABLET TABLET 
+*/
 
 @media only screen and (max-width:800px) {
-    /* For mobile phones: */
+    /* For tablets: */
     
     body {
        width: 100%; 
     }
+
     .top-part, .footer {
       width:100%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    p.headerclass {
+        max-width: none;
     }
 
     .up {
@@ -369,14 +381,10 @@ h3 {
         width: 90%;
     }
 
+/* product features */
+
     .products div {
         width: 100%;
-    }
-
-    .products h3 {
-        /* font-size: 17.5px;
-        line-height: 21px;
-        text-align: center; */
     }
 
     .features {
@@ -386,9 +394,7 @@ h3 {
         justify-content: space-between;
     }
 
-    .feat {
-        /* margin: auto; */
-    }
+/* team members */
 
     .team {
         display: flex;
@@ -421,23 +427,139 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
     .footer-left {
         margin-left: 10%;
-        margin-bottom: 30px;
     }
 
     .footer-right {
-
+        margin-top: 10px;
     }
 
+    .footer-container {
+        padding-bottom: 0;
+    }
 }
 
-@media only screen and (max-width:768px) {
+/* 
+MOBILE VERSION MOBILE VERSION MOBILE VERSION 
+MOBILE VERSION MOBILE VERSION MOBILE VERSION
+*/
+
+@media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .top-part, .main, .footer {
-        width:100%;
+   bbbnn  .top-part, .main, .footer {
+        width: 100%;
       }
+
+      body {
+        width: 100%; 
+     }
+ 
+     .top-part, .footer {
+       width: 100%;
+     }
+
+     .right {
+         display: none;
+     }
+ 
+     .header {
+         width: 90%;
+     }
+ 
+     p.headerclass {
+         max-width: none;
+     }
+ 
+     .up {
+         background-color: rgba(0, 0, 0, 0.4);
+     }
+ 
+     .common {
+         display: none;
+     }
+ 
+     .main {
+         width: 90%;
+     }
+ 
+     .products div {
+         width: 100%;
+     }
+ 
+     .products h3 {
+         /* font-size: 17.5px;
+         line-height: 21px;
+         text-align: center; */
+     }
+ 
+     .features {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+     }
+ 
+     .feat {
+         /* margin: auto; */
+     }
+ 
+     .team {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+     }
+ 
+     .team-members {
+         display: flex;
+         flex-direction: column;
+ 
+     }
+ 
+     .t-member {
+         max-width: 100%;
+     }
+ 
+     .form {
+         width: 100%;
+     }
+     input, textarea {
+         width: 95%;
+         margin-bottom: 38px;
+     }
+ 
+     .form-names {
+         display: flex;
+         flex-direction: column;
+     }
+ 
+ .footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 30px;
+ }
+ 
+     .footer-left {
+         margin-left: 10%;
+ 
+         /* margin-bottom: 30px; */
+     }
+ 
+     .footer-right {
+         margin-top: 10px;
+     }
+ 
+     .footer-container {
+         padding-bottom: 0;
+     }
+
+    
+ }
+
 
 }
